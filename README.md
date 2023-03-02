@@ -1,8 +1,55 @@
 # 智能财务门户Web端
 ## 0. 写在前面
-> 智能财务门户Web端的前端部分，后端部分请移步至[这里]
+> 智能财务门户Web端的前端部分，后端部分请移步至[这里]()
+
+### 先讲废话
+OK,OK如你所见，本项目是由智能财务最强的Web开发工程师之一（位列智能财务舒亚非导师班前十）的[@Lycoiref(刘宇飞)](https://github.com/Lycoiref)与HelloWorld目前位列前5的Web部长[@travelless(靳一鸣)](https://github.com/travelless)联手开发。那么，这样的强强联手会开发出一个~~什么东西~~（误）怎样强大的Web应用程序呢？
+
+什么中二文案，啊啊啊啊啊啊我要尬死了
+
+### 如何接入项目
+
+```bash
+# 克隆项目
+git clone https://github.com/Lycoiref/IntelligentFinance.git
+
+# 进入项目目录
+cd IntelligentFinance
+
+# 安装依赖
+yarn install  # 如果没有yarn请先通过npm install -g yarn安装
+
+# 启动服务
+yarn dev
+```
+
+## 1. 项目背景
+> 本项目旨在重构创新实践1-4中的智能财务门户网站Web项目，完善并解决之前存在的一些问题。根据目前已有项目，当前存在的痛点如下：
+
+- 项目整体并不完善，功能缺失（如全站的登陆管理，其他相关页的链接管理）
+- 项目架构本身存在问题，不易维护
+- 前期部分UI与响应式交互效果差，网站的故事性不好
+## 2. 项目目标
+> 本项目期望达成的目标
 
 
-OK,OK如你所见，本项目是由智能财务最强的Web开发工程师之一（位列智能财务舒亚非导师班前十）的[@Lycoiref(刘宇飞)](https://github.com/Lycoiref)与HelloWorld目前位列前5的Web部长[@travelless(靳一鸣)](https://github.com/travelless)联手开发。那么，这样的强强联手会开发出一个~~什么东西（误）~~怎样强大的Web应用程序呢？<span style="background-color:black; color: black;" onmouseover="this.style.color=white;" onmouseout="this.style.color=black;">什么中二文案，啊啊啊啊啊啊我要尬死了</span>
+本项目计划在本学期内（16周）完成对智能财务门户网站的重构，包括网站的前端效果（响应式布局与交互）的重构与设计、Nodejs后端管理以及对申请接口的规范设计与实现、提供易于对展示项目进行增删改查的可视化功能，便于对以后项目的接入与管理。具体安排如下表。
 
-## 1. 项目简介
+
+## 3. 项目技术栈
+> 为了保证项目最后的完成度与可用性，本项目采用敏捷开发的软件开发方法，前期完成大体框架并在后期进行大量迭代，最后达成预期效果。同时，为了确保可行性，将本项目的技术栈列举如下：
+
+- Vue3 + Vite 生命周期较新的老牌前端框架组合，同时有着极高的响应速度，确保开发效率以及能够实现响应式布局的需求效果。较新的技术与其活跃的生态圈也能保证项目的维护寿命。
+- Element Plus 经典后台UI框架，用于架设管理后台以及一些常用组件。
+- Node.js 后端架设，高性能易维护。
+- Sequelize ORM框架，极大的简化了数据库操作，提升开发效率。
+- ……（在开发过程中根据需要添加）
+
+## 4. 人员安排
+> 输入项目的所有干系人，包括内部和外部干系人。
+
+| **人员** | **岗位** |
+| --- | --- |
+| [@Lycoiref](/lycoiref) | 项目经理 |
+| [@Lycoiref](/lycoiref)、[@靳一鸣](/travelless) | 技术负责人 |
+| [@Lycoiref](/lycoiref) | 产品负责人 |
