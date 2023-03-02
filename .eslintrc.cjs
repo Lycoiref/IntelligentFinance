@@ -8,36 +8,36 @@
  * 在本配置文件中只做代码质量约束规范配置
  */
 module.exports = {
-	root: true,
-	env: {
-		browser: true,
-		node: true,
-	},
-	extends: [
-		'eslint-config-prettier',
-		// 'eslint:recommended', // 使用推荐的eslint
-		'airbnb',
-		// 'plugin:@typescript-eslint/recommended',
-		'plugin:vue/vue3-recommended', // 使用插件支持vue3
-		'plugin:vue/vue3-essential',
-		//1.继承.prettierrc.js文件规则2.开启rules的 "prettier/prettier": "error"3.eslint fix的同时执行prettier格式化
-		'plugin:prettier/recommended',
-	],
-	parser: 'vue-eslint-parser',
-	parserOptions: {
-		ecmaVersion: 2020,
-		sourceType: 'module',
-		// parser: '@typescript-eslint/parser',
-	},
-	rules: {
-		'no-unused-vars': 2,
-		'no-undef': 2,
-	},
-	plugins: ['vue'],
-	globals: {
-		defineProps: 'readonly',
-		defineEmits: 'readonly',
-		defineExpose: 'readonly',
-		withDefaults: 'readonly',
-	},
+    root: true,
+    env: {
+        browser: true,
+        node: true,
+    },
+    extends: [
+        'eslint-config-prettier',
+        'eslint:recommended', // 使用推荐的eslint
+        // 'airbnb',
+        // 'plugin:@typescript-eslint/recommended',
+        'plugin:vue/vue3-recommended', // 使用插件支持vue3
+        'plugin:vue/vue3-essential',
+        //1.继承.prettierrc.js文件规则2.开启rules的 "prettier/prettier": "error"3.eslint fix的同时执行prettier格式化
+        'plugin:prettier/recommended',
+    ],
+    parser: 'vue-eslint-parser',
+    parserOptions: {
+        ecmaVersion: 2020,
+        sourceType: 'module',
+        // parser: '@typescript-eslint/parser',
+    },
+    rules: {
+        'no-unused-vars': 2,
+        'no-undef': 2,
+    },
+    plugins: ['vue', 'html'],
+    globals: {
+        defineProps: 'readonly',
+        defineEmits: 'readonly',
+        defineExpose: 'readonly',
+        withDefaults: 'readonly',
+    },
 }
