@@ -2,10 +2,10 @@
 import { ref } from 'vue'
 
 defineProps({
-	msg: String,
+	msg: String(''),
 })
 
-let aasd = 'ads'
+// let aasd = 'ads'
 
 const count = ref(0)
 </script>
